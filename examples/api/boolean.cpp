@@ -39,3 +39,17 @@ int main(int argc, char **argv)
   gmsh::finalize();
   return 0;
 }
+
+
+/*
+
+g++ -O3 -o boolean boolean.cpp \
+  -I/home/liy/gmsh/api \
+  -L/home/liy/gmsh/build \
+  -Wl,-rpath=/home/liy/gmsh/build \
+  -lgmsh
+
+# 现在可以直接运行，不需要设置环境变量
+./boolean
+
+*/

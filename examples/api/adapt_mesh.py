@@ -136,3 +136,30 @@ if gui:
     gmsh.fltk.run()
 
 gmsh.finalize()
+
+"""
+
+# 设置库搜索路径
+export LD_LIBRARY_PATH=/home/liy/gmsh/build:$LD_LIBRARY_PATH
+
+# 设置Python模块路径
+export PYTHONPATH=/home/liy/gmsh/api:$PYTHONPATH
+
+# 现在运行
+python3 adapt_mesh.py
+
+
+
+
+
+echo 'export LD_LIBRARY_PATH="/home/liy/gmsh/build:$LD_LIBRARY_PATH"' >> ~/.bashrc
+echo 'export PYTHONPATH="/home/liy/gmsh/api:$PYTHONPATH"' >> ~/.bashrc
+echo 'export PATH="/home/liy/gmsh/build:$PATH"' >> ~/.bashrc
+
+# 2. 应用配置
+source ~/.bashrc
+
+
+
+
+"""

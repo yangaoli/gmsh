@@ -7,9 +7,6 @@
 // -----------------------------------------------------------------------------
 
 #include <set>
-
-// The Gmsh C++ API is entirely defined in the `gmsh.h' header (which contains
-// the full documentation of all the functions in the API):
 #include <gmsh.h>
 
 int main(int argc, char **argv)

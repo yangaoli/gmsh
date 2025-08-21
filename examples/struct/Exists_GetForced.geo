@@ -62,3 +62,7 @@ Struct struct_with_list_member [ list_member {111,222,333}];
 get_forced_inexistent_element_of_member_list_of_real = GetForced(struct_with_list_member.list_member(99), -1); // Will give default value -1
 
 //
+//+
+SetFactory("Built-in");
+//+
+SetFactory("OpenCASCADE");

@@ -34,7 +34,7 @@ Build Gmsh from the command line
 
     cd build
     cmake ..
-    make
+    make -j10
 
   Optionally running
 
@@ -47,10 +47,14 @@ Build Gmsh from the command line
   then also be used by external codes through the C++, C, Python, Julia and
   Fortran Gmsh API, run
 
+    mkdir build
     cd build
     cmake -DENABLE_BUILD_DYNAMIC=1 ..
-    make
-    make install
+    make -j10
+
+  You can also directly run the following code
+  
+    sh gmsh_cov.sh
 
   This will install the Gmsh app and the shared Gmsh library, as well as the C++
   and C include files, and the Python, Julia and Fortran modules.

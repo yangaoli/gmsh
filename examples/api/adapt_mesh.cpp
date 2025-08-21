@@ -301,3 +301,18 @@ int main(int argc, char **argv)
   gmsh::finalize();
   return 0;
 }
+
+/*
+
+export PATH="/home/liy/gmsh/build:$PATH"
+
+g++ -O3 -o adapt_mesh adapt_mesh.cpp \
+  -I/home/liy/gmsh/api \
+  -L/home/liy/gmsh/build \
+  -Wl,-rpath=/home/liy/gmsh/build \
+  -lgmsh
+
+# 现在可以直接运行，不需要设置环境变量
+./adapt_mesh
+
+*/
