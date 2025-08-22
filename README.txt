@@ -38,7 +38,7 @@ Build Gmsh from the command line
 
   Optionally running
 
-    make install
+    make install -j8
 
   will install the Gmsh app in the standard system location (controlled by
   CMAKE_INSTALL_PREFIX - see below).
@@ -51,6 +51,10 @@ Build Gmsh from the command line
     cd build
     cmake -DENABLE_BUILD_DYNAMIC=1 ..
     make -j10
+
+  Optionally running
+
+    make install -j8
 
   You can also directly run the following code
   

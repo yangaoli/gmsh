@@ -312,7 +312,10 @@ g++ -O3 -o adapt_mesh adapt_mesh.cpp \
   -Wl,-rpath=/home/liy/gmsh/build \
   -lgmsh
 
-# 现在可以直接运行，不需要设置环境变量
+  
+
+g++ -O3 -o adapt_mesh adapt_mesh.cpp -lgmsh
+
 ./adapt_mesh
 
 */
